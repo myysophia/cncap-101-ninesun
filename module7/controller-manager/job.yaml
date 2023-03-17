@@ -4,7 +4,7 @@ metadata:
   name: pi
 spec:
   parallelism: 2
-  completions: 5
+  completions: 5 # 最多建5个，完成后资源会释放
   template:
     spec:
       containers:

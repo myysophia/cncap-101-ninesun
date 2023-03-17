@@ -7,6 +7,6 @@ spec:
     - name: lifecycle-demo-container
       image: nginx
       lifecycle:
-        preStop:
+        preStop: # 只有preStop执行完才会依次发送signterm 和kill
           exec:
             command: [ "/bin/sh","-c","nginx -s quit; while killall -0 nginx; do sleep 1; done" ]
