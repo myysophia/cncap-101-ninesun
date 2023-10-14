@@ -22,7 +22,7 @@ metadata:
   name: simple
 spec:
   selector:
-    istio: ingressgateway
+    istio: ingressgateway # istio 组件 istio-ingress。 带有这个label pod getenvoy下发如下的规则
   servers:
     - hosts:
         - simple.cncamp.io

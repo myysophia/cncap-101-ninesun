@@ -1,7 +1,7 @@
 ### 在新 network namespace 执行 sleep 指令：
 
 ```sh
-unshare -fn sleep 60
+unshare -fn sleep 600
 ```
 
 ### 查看进程信息
