@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: StatefulSet
+kind: StatefulSet # 之前叫PetSet  有个小故事 ，例如redis 之前叫master和slave 现在叫 master和worker
 metadata:
   name: nginx-ss
 spec:
